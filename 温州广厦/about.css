@@ -1,0 +1,49 @@
+.side{
+    width: 267px;
+    height: 800px;
+    float: left;
+    background: white;
+}
+
+.side img{
+    width: 220px;
+    height: 200px;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+
+.content{
+    width: 599px;
+    height: 800px;
+    float: right;
+    background: white;
+    border-left: 1px solid #ccc;
+}
+    
+
+.content h1{
+    background: url(./images/aboutme.gif);
+    width: 127px;
+    height: 26px;
+    font-size: 100%;
+    text-indent: -9999px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.content img{
+    display: block;
+    padding-left: 15px;
+}
+
+.content p{
+    padding-left: 20px;
+    padding-right: 60px;
+    line-height: 180%;
+    text-indent: 24px;
+}
+
+.content p span{
+    color: #06f;
+}
+

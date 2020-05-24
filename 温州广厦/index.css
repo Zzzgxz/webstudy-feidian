@@ -1,0 +1,152 @@
+
+.sidebar{
+    height: 490px;
+    width: 251px;
+    background-color: white;
+    float: left;
+    background: #fff url(./images/weline.gif) no-repeat right 54%;
+}
+
+.sidebar h1{
+    height: 35px;
+    width: 135px;
+    margin-left: 30px;
+    margin-top: 30px;;
+}
+
+.sidebar h2{
+    height: 76px;
+    width: 172px;
+    margin-left: 30px;
+}
+
+.sidebar ul{
+    text-indent: 35px;
+    line-height: 180%;
+}
+
+.sidebar ul li{
+    color:#666;
+}
+
+.sidebar h5{
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.news{
+     height: 300px;
+     width: 313px;
+     float: left;
+     background: white;
+}
+
+.news h1{
+    width: 123px;
+    height: 27px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.news h2 {
+    width: 65px;
+    height: 11px;
+    margin-left: 15px;
+    margin-top: 9px;
+}
+
+.news ul{
+    text-indent: 17px;
+    line-height: 160%;
+    margin-left: 20px;
+    background: url(./images/weline.gif) repeat-y right top;
+    color: #666;
+}
+
+.news ul .date{
+    color: orange;
+    font-weight: bold;
+    background: url(./images/ico.gif) no-repeat left center;
+}
+
+.news img{
+    margin-left: 20px;
+}
+
+.about{
+    height: 300px;
+    width: 303px;
+    background-color: #fff;
+    float: left;
+}
+
+.about h1{
+    width: 127px;
+    height: 26px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.about h2{
+    width: 249px;
+    height: 96px;
+    margin-top: 5px;
+    margin-left: 35px;
+}
+
+.about p{
+    margin-top: 5px;
+    margin-left: 40px;
+    line-height: 180%;
+    margin-right: 20px;
+    color: #666;
+}
+
+.about a{
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.estate{
+    height: 190px;
+    width: 616px;
+    background-color: white;
+    float: left;
+}
+
+.estate .content{
+    height: 190px;
+    width: 550px;
+    border-top: 0.5px solid #ccc;
+    margin: 0 auto;
+}
+
+.estate .content h1{
+    width: 224px;
+    height: 143px;
+    margin-top: 10px;
+    float: left;
+}
+
+.estate .content .text{
+    float: left;
+    background: url(./images/estate1.gif) no-repeat;
+    width: 280px;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
+.estate .content .text h2{
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+    line-height: 160%;
+}
+
+.estate .content .text h3{
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+    line-height: 160%;
+}
