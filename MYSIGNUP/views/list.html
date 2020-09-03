@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生管理系统登录</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/CSS/index.css">
+    <link rel="stylesheet" href="/public/CSS/special.css">
+
+</head>
+<body>
+    <main>
+        <div class="header"><h2>学生管理系统</h2></div>
+        <div class="content_" id="sign">
+
+            <main class="container mt-5">
+                <h1 class="alert-heading">学生管理
+                    <a class="btn btn-link btn-sm" href="/students/new">添加学生</a>
+                </h1>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                            <th>爱好</th>
+                            <th class="text-center" width="140">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{each students}}
+                        <tr>
+                          <td>{{$value.id}}</td>
+                          <td>{{$value.name}}</td>
+                          <td>{{$value.gender}}</td>
+                          <td>{{$value.age}}</td>
+                          <td>{{$value.hobbies}}</td>
+                          <td>
+                            <a href="/students/edit?id={{$value.id}}">编辑</a>
+                            <a href="/students/delete?id={{$value.id}}">删除</a>
+                          </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">«</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">»</a></li>
+                </ul>
+            </main>
+
+        </div>
+        <div class="footer">
+            <p>made by Zzzgxz</p>
+        </div>
+    </main>
+</body>
+</html>

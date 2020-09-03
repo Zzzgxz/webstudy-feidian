@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加学生</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand">学生管理系统</a>
+    </nav>
+    <main class="container mt-5">
+        <h1 class="alert-heading">添加学生</h1>
+        <form action="/students/edit" method="post" autocomplete="off">
+            <div class="form-group">
+                <label for=""></label>
+                <input type="hidden" name="id"  class="form-control" value="{{student.id}}">
+            </div>
+            <div class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" name="name" id="name" class="form-control" value="{{student.name}}" >
+            </div>
+            <div class="form-group">
+                <label for="gender" class="radio-inline">性别</label><br>
+                <input type="radio" name="gender" value="0" id="gender">男   
+                <input type="radio" name="gender" value="1" id="gender">女
+            </div>
+            <div class="form-group">
+                <label for="age">年龄</label>
+                <input type="number" name="age" id="age" class="form-control" value="{{student.age}}">
+            </div>
+            <div class="form-group">
+                    <label for="hobbies">爱好</label>
+                    <input type="text" name="hobbies" id="hobbies" class="form-control" value="{{student.hobbies}}">
+            </div>
+            <button class="btn btn-primary">保存</button>
+        </form>
+    </main>
+</body>
+</html>
